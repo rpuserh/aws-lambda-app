@@ -23,17 +23,18 @@ terraform plan
 terraform apply
 ```
 
-VPC resources
+[VPC resources:](https://github.com/rpuserh/aws-lambda-app/blob/main/workspace/vpc.tf)
  - 3 public subnets and one route table to reoute traffic via Internet GW
  - 3 Nat Gateways In each region per Public subnet
  - 3 Private Subnets and 3 route traffic to internet via NAT gateway (Per each region)
  - 3 intra Subnets. This is true Private Subnets there is no internet access. (Not used but have recomindation see below)
 
-Lambda resources:
+[Lambda resources:]((https://github.com/rpuserh/aws-lambda-app/blob/main/workspace/lambda.tf))
  - Lambda roles to access VPC, EC2 snapshots and write logs to cloudwatch
  - Lambda function with VPC integration
  - Lambda function deployment
  - cloudwatch event rule and trigger to run lambda on schedule
+   See file for each resource description
 
 
 ### Recommendations for Improvement
