@@ -36,6 +36,8 @@ terraform apply
  - cloudwatch event rule and trigger to run lambda on schedule
    See file for each resource description
 
+[Lambda Code](https://github.com/rpuserh/aws-lambda-app/tree/main/workspace/lambda_function)
+
 
 ### Recommendations for Improvement
 For enhanced security, the Lambda function could be moved to the intra subnets. This would prevent it from having any outbound internet access. To allow the function to communicate with the AWS EC2 API, we would need to create a VPC Endpoint for EC2 within these subnets.
