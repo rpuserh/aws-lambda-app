@@ -128,8 +128,8 @@ resource "aws_lambda_function" "resource_cleaner" {
 resource "aws_cloudwatch_event_rule" "every_12_hours" {
   name                = "run-resource-cleaner-every-12-hours"
   description         = "Triggers the resource-cleaner Lambda every 12 hours"
-  schedule_expression = "rate(5 minutes)"
-  #schedule_expression = "rate(12 hours)"
+  #schedule_expression = "rate(5 minutes)"
+  schedule_expression = "rate(12 hours)"
 }
 
 # Set the Lambda function as the target for the rule.
