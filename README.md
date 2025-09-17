@@ -12,7 +12,7 @@ Assumptions made:
  -  Lambda logs/metrics are in CloudWatch
  -  Lambda will Run every 12h
  -  State is stored locally (No remote backend is configured)
- -  Env var is set to run in dry mode
+ -  [Env var is set to run in dry mode](https://github.com/rpuserh/aws-lambda-app/blob/main/workspace/lambda.tf#L111)
 
 To run this workspace via terraform update file `env.sh` by updating creds and source file
 ```
