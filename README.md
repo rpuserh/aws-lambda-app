@@ -31,7 +31,7 @@ terraform apply
  - 3 Private Subnets and 3 route traffic to internet via NAT gateway (Per each region)
  - 3 intra Subnets. This is true Private Subnets there is no internet access. (Not used but have recomindation see below)
 
-[Lambda resources:]((https://github.com/rpuserh/aws-lambda-app/blob/main/workspace/lambda.tf))
+[Lambda resources:](https://github.com/rpuserh/aws-lambda-app/blob/main/workspace/lambda.tf)
  - Lambda roles to access VPC, EC2 snapshots and write logs to cloudwatch
  - Lambda function with VPC integration
  - Lambda function deployment
