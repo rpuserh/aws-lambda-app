@@ -23,7 +23,7 @@ terraform plan
 terraform apply
 ```
 
-[VPC resources:](https://github.com/rpuserh/aws-lambda-app/blob/main/workspace/vpc.tf)
+[VPC resources:](https://github.com/rpuserh/aws-lambda-app/blob/main/workspace/vpc.tf) Used standard module to create VPC
  - 3 public subnets and one route table to reoute traffic via Internet GW
  - 3 Nat Gateways In each region per Public subnet
  - 3 Private Subnets and 3 route traffic to internet via NAT gateway (Per each region)
