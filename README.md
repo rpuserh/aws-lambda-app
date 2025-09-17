@@ -23,6 +23,8 @@ terraform plan
 terraform apply
 ```
 
+[VPC Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html?network=10.56.0.0&mask=16&division=25.f9c4e00)
+
 [VPC resources:](https://github.com/rpuserh/aws-lambda-app/blob/main/workspace/vpc.tf) Used standard module to create VPC
  - 3 public subnets and one route table to reoute traffic via Internet GW
  - 3 Nat Gateways In each region per Public subnet
